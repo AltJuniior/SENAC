@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="../js/scripts.js"></script>
-  <script src="../js/form.js"></script>
+  <script src="../js/formalisamento.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
@@ -52,211 +52,83 @@
         <label for="name" class="form-label">Nome</label>
         <input type="name" class="form-control" name="name" id="name" placeholder="Digite seu nome completo" />
       </div>
+
+      <div class="mb-3">
+        <label for="Email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="Email" placeholder="Digite seu Email">
+        <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém.</div>
+      </div>
+
       <div class="mb-3">
         <label for="whatsapp" class="form-label">Número do WhatsApp:</label>
-        <input type="text" class="form-control" name="whatsapp" id="whatsapp"
-          placeholder="Digite seu número do WhatsApp" />
-      </div>
-      <div class="mb-3">
-        <label for="hairlength" class="form-label">Formulário</label>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="hairlength" id="long" />
-          <label class="form-check-label" for="long"> Corte </label>
-        </div>
-
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="hairlength" id="average" />
-          <label class="form-check-label" for="average"> Alisamento </label>
-        </div>
-
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="hairlength" id="short" />
-          <label class="form-check-label" for="short"> Coloração </label>
-        </div>
+        <input type="tel" pattern="^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$" class="form-control"
+          id="whatsapp" placeholder="Digite seu número do WhatsApp" />
       </div>
 
-<!-- Início formulário de corte -->
-      <div class="mb-3">
-        <label for="hairlength" class="form-label">Comprimento do Cabelo</label>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="hairlength" id="long" />
-          <label class="form-check-label" for="long"> Longo </label>
+      <div class="row">
+        <div class="mb-3 col">
+          <label for="Profissao" class="form-label">Profissão</label>
+          <input type="profissao" class="form-control" id="Profissao">
         </div>
 
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="hairlength" id="average" />
-          <label class="form-check-label" for="average"> Médio </label>
-        </div>
-
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="hairlength" id="short" />
-          <label class="form-check-label" for="short"> Curto </label>
+        <div class="mb-3 col">
+          <label for="Age" class="form-label">Idade</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected disabled>Selecione</option>
+            <option value="Jovem">Jovem</option>
+            <option value="MediaIdade">Média Idade</option>
+            <option value="Madura">Madura</option>
+          </select>
         </div>
       </div>
 
-      <div class="mb-3">
-        <label for="curvature" class="form-label">Curvatura do Cabelo</label>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="curvature" id="straight" />
-          <label class="form-check-label" for="straight"> Liso </label>
+      <div class="row">
+        <div class="mb-3 col">
+          <label for="chemistry" class="form-label">Já usa química ?</label>
+          <select class="form-select" aria-label="Default select example" id="chemistry">
+            <option selected disabled>Selecione</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+          </select>
         </div>
 
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="curvature" id="wavy" />
-          <label class="form-check-label" for="wavy"> Ondulado </label>
+        <div class="mb-3 d-none col" id="hairChemistryContainer">
+          <label for="hairChemistry" class="form-label">Qual ?</label>
+          <select class="form-select" aria-label="Default select example" id="hairChemistrySelected">
+            <option selected disabled>Selecione</option>
+            <option value="Guanidina ">Guanidina</option>
+            <option value="Sódio">Sódio</option>
+            <option value="Amônia">Amônia</option>
+            <option value="Progressiva">Progressiva</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="mb-3 col">
+          <label for="allergy" class="form-label">Alguma alergia ?</label>
+          <select class="form-select" aria-label="Default select example" id="allergySelect">
+            <option selected disabled>Selecione</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+          </select>
         </div>
 
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="curvature" id="" />
-          <label class="form-check-label" for="curly"> Crespo </label>
+        <div class="mb-3 d-none col" id="allergyContainer">
+          <label for="allergyText" class="form-label">Qual ?</label>
+          <input type="text" class="form-control" id="allergyText" placeholder="Fale um pouco">
         </div>
       </div>
 
       <div class="mb-3">
-        <label for="hairstyle" class="form-label">Estilo de Cabelo</label>
-        <div id="longStyles" class="hairstyle-options d-none">
-          <!-- Opções para cabelo longo -->
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="longStyle" id="longoStraight" />
-            <label class="form-check-label" for="straight"> RETO </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="longStyle" id="longoTexturized" />
-            <label class="form-check-label" for="texturized">
-              DESFIADO
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="longStyle" id="longoLayers" />
-            <label class="form-check-label" for="layers"> Camadas </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="longStyle" id="longoGraduated" />
-            <label class="form-check-label" for="graduated"> DEGRADÊ </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="longStyle" id="longoVShape" />
-            <label class="form-check-label" for="vShape">
-              EM FORMATO DE V
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="longStyle" id="longoUShape" />
-            <label class="form-check-label" for="uShape">
-              EM FORMATO DE U
-            </label>
-          </div>
-        </div>
-
-        <div id="mediumStyles" class="hairstyle-options d-none">
-          <!-- Opções para cabelo médio -->
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="mediumStyle" id="medioLongBob" />
-            <label class="form-check-label" for="mediumLongBob">
-              LONG BOB
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="mediumStyle" id="medioStraight" />
-            <label class="form-check-label" for="straight"> RETO </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="mediumStyle" id="medioTexturized" />
-            <label class="form-check-label" for="texturized">
-              DESFIADO
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="mediumStyle" id="medioLayers" />
-            <label class="form-check-label" for="layers"> Camadas </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="mediumStyle" id="medioGraduated" />
-            <label class="form-check-label" for="graduated"> DEGRADÊ </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="mediumStyle" id="medioChanel" />
-            <label class="form-check-label" for="chanel"> CHANEL </label>
-          </div>
-        </div>
-
-        <div id="shortStyles" class="hairstyle-options d-none">
-          <!-- Opções para cabelo curto -->
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="shortStyle" id="pequenoLayers" />
-            <label class="form-check-label" for="layers"> Camadas </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="shortStyle" id="pequenoChanel" />
-            <label class="form-check-label" for="chanel"> Chanel </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="shortStyle" id="pequenoAbatida" />
-            <label class="form-check-label" for="abatida">
-              Chanel nuca abatida
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="shortStyle" id="pequenoShortBob" />
-            <label class="form-check-label" for="shortBob"> Short bob </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" name="shortStyle" id="pequenoOther" />
-            <label class="form-check-label" for="other"> OUTRO </label>
-          </div>
-        </div>
+        <label for="pregnant" class="form-label">Gestante ?</label>
+        <select class="form-select" id="pregnant">
+          <option selected disabled>Selecione</option>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
       </div>
-      <!-- Fim formulário corte -->
-      <!-- Início formulário Alisamento -->
 
-      <div class="mb-3">
-        <label for="curvature" class="form-label">Já usa química ?</label>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="curvature" id="straight" />
-          <label class="form-check-label" for="straight"> Sim </label>
-        </div>
-
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="curvature" id="wavy" />
-          <label class="form-check-label" for="wavy"> Não </label>
-        </div>
-
-        <div class="mb-3">
-          <label for="curvature" class="form-label">Guanidina ?</label>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="curvature" id="straight" />
-            <label class="form-check-label" for="straight"> Sim </label>
-          </div>
-  
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="curvature" id="wavy" />
-            <label class="form-check-label" for="wavy"> Não </label>
-          </div>
-
-          <div class="mb-3">
-            <label for="curvature" class="form-label">Sódio ?</label>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="curvature" id="straight" />
-              <label class="form-check-label" for="straight"> Sim </label>
-            </div>
-    
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="curvature" id="wavy" />
-              <label class="form-check-label" for="wavy"> Não </label>
-            </div>
-
-            <div class="mb-3">
-              <label for="curvature" class="form-label">Sódio ?</label>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="curvature" id="straight" />
-                <label class="form-check-label" for="straight"> Sim </label>
-              </div>
-      
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="curvature" id="wavy" />
-                <label class="form-check-label" for="wavy"> Não </label>
-              </div>
-      
       <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
   </div>
