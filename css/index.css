@@ -10,3 +10,6 @@
 html, body {
     height: 100vh;
 }
+.borda{
+    border-radius: 50%;
+}
