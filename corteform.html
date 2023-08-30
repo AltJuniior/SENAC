@@ -61,24 +61,28 @@
             </div>
 
             <div class="mb-3">
-                <label for="whatsapp" class="form-label">Número do WhatsApp:</label>
+                <label for="whatsapp" class="form-label">Número do WhatsApp</label>
                 <input type="tel" pattern="^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$" class="form-control"
                     id="whatsapp" placeholder="Digite seu número do WhatsApp" />
             </div>
 
             <div class="row">
                 <div class="mb-3 col">
-                    <label for="Profissao" class="form-label">Profissão</label>
-                    <input type="profissao" class="form-control" id="Profissao">
-                </div>
-
-                <div class="mb-3 col">
                     <label for="Age" class="form-label">Idade</label>
                     <select class="form-select" aria-label="Default select example">
                         <option selected disabled>Selecione</option>
-                        <option value="Jovem">Jovem</option>
-                        <option value="MediaIdade">Média Idade</option>
-                        <option value="Madura">Madura</option>
+                        <option value="Jovem">18 ~ 29</option>
+                        <option value="MediaIdade">30 ~ 49</option>
+                        <option value="Madura">50 +</option>
+                    </select>
+                </div>
+
+                <div class="mb-3 col">
+                    <label for="pregnant" class="form-label">Gestante ?</label>
+                    <select class="form-select" id="pregnant">
+                        <option selected disabled>Selecione</option>
+                        <option value="Sim">Sim</option>
+                        <option value="Não">Não</option>
                     </select>
                 </div>
             </div>
@@ -138,10 +142,8 @@
             </div>
 
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-2"></li><a class="text-body-secondary" href="https://www.instagram.com/senacbahia/"><i
-                        class="bi bi-instagram"></i></a></li>
-                <li class="ms-2"><a class="text-body-secondary" href="https://pt-br.facebook.com/SenacBahia/"><i
-                            class="bi bi-facebook"></i></a></li>
+                <li class="ms-2"></li><a class="text-body-secondary" href="https://www.instagram.com/senacbahia/"><i class="bi bi-instagram"></i></a></li>
+                <li class="ms-2"><a class="text-body-secondary" href="https://pt-br.facebook.com/SenacBahia/"><i class="bi bi-facebook"></i></a></li>
                 <li class="ms-2"><a class="text-body-secondary" href="#"><i class="bi bi-twitter"></i></a></li>
             </ul>
         </footer>
