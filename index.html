@@ -6,44 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="../js/scripts.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" href="imgs/icon.png">
   <title>SENAC</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
-        <img src="../imgs/logo-SENAC.png" alt="Logo Senac" width="40" height="40">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="equipe.html">Equipe</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link active dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">Formulário</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="corteform.html">Corte</a></li>
-              <li><a class="dropdown-item" href="alisamentoform.html">Alisamento</a></li>
-              <li><a class="dropdown-item" href="colorimentoform.html">Colorimetria Capilar</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <script src="js/navbar.js"></script>
 
   <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -56,25 +29,31 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <a href="corteform.html">
-          <img class="w-100 img-fluid d-md-none" src="imgs/Caroulsel1Mobile.jpg" alt="mobile">
-          <img class="w-100 img-fluid d-none d-md-block d-xl-none" src="imgs/Caroulsel1Tablet.jpg" alt="tablet">
-          <img class="w-100 img-fluid d-none d-xl-block" src="imgs/Caroulsel1Tablet.jpg" alt="desktop">
-          </a>
+        <a>
+          <img class="w-100 img-fluid d-md-none" src="imgs/Caroulsel1Mobile.jpg" alt="mobile" width="375" height="415">
+          <img class="w-100 img-fluid d-none d-md-block d-xl-none" src="imgs/Caroulsel1Tablet.jpg" alt="tablet" width="768"
+          height="415">
+          <img class="w-100 img-fluid d-none d-xl-block" src="imgs/Caroulsel1Desktop.jpg" alt="desktop" width="1440"
+          height="415">
+        </a>
       </div>
       <div class="carousel-item">
         <a href="equipe.html">
-          <img class="w-100 img-fluid d-md-none" src="imgs/Caroulsel2.jpg" alt="mobile" width="375" height="415">
-          <img class="w-100 img-fluid d-none d-md-block d-xl-none" src="imgs/Caroulsel2.jpg" alt="tablet" width="768" height="415">
-          <img class="w-100 img-fluid d-none d-xl-block" src="imgs/Caroulsel2.jpg" alt="desktop" width="1440" height="415">
-          </a>
+          <img class="w-100 img-fluid d-md-none" src="imgs/Caroulsel2Mobile.jpg" alt="mobile" width="375" height="415">
+          <img class="w-100 img-fluid d-none d-md-block d-xl-none" src="imgs/Caroulsel2Tablet.jpg" alt="tablet" width="768"
+            height="415">
+          <img class="w-100 img-fluid d-none d-xl-block" src="imgs/Caroulsel2Desktop.jpg" alt="desktop" width="1440"
+            height="415">
+        </a>
       </div>
       <div class="carousel-item">
-        <a href="https://wa.me/5575988368668">
-          <img class="w-100 img-fluid d-md-none" src="imgs/Caroulsel3.png" alt="mobile" width="375" height="415">
-          <img class="w-100 img-fluid d-none d-md-block d-xl-none" src="imgs/Caroulsel3.png" alt="tablet" width="768" height="415">
-          <img class="w-100 img-fluid d-none d-xl-block" src="imgs/Caroulsel3.png" alt="desktop" width="1440" height="415">
-          </a>
+        <a href="https://wa.me/5575981841104">
+          <img class="w-100 img-fluid d-md-none" src="imgs/Caroulsel3Mobile.jpg" alt="mobile" width="375" height="415">
+          <img class="w-100 img-fluid d-none d-md-block d-xl-none" src="imgs/Caroulsel3Tablet.jpg" alt="tablet" width="768"
+            height="415">
+          <img class="w-100 img-fluid d-none d-xl-block" src="imgs/Caroulsel3Desktop.jpg" alt="desktop" width="1440"
+            height="415">
+        </a>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -87,83 +66,66 @@
     </button>
   </div>
 
-  <h2 class="text-center p-4">Resultados</h2>
+  <h2 class="text-center p-4">Serviços</h2>
 
-  <div class="container-fluid">
+  <div class="container">
 
     <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="card-wrapper container">
             <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3 gap-0 gap-5 justify-content-center">
-            <div class="card col">
-              <img class="card-img-top img-fluid"
-                src="./imgs/exemploMechas.jpeg">
-              <div class="card-body">
-                <h5 class="card-title">Mechas</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-                  eveniet architecto. Autem nostrum itaque perspiciatis corrupti, eum quae iure vero,
-                  fugit minus consequatur inventore, voluptates quod libero minima amet asperiores.</p>
-                <p><a class="btn btn-secondary" href="#">Vem ser modelo!</a></p>
+
+              <div class="card">
+                <img src="./imgs/exemploMechas.jpeg" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Mechas</h5>
+                  <p><a class="btn btn-secondary" href="Mechas.html">Vem ser modelo!</a></p>
+                </div>
               </div>
-            </div>
-            <div class="card col">
-              <img src="./imgs/exemploAlisamento.jpeg" class="card-img-top img-fluid"
-                alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Alisamento</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
-                  nobis officiis? Laudantium ipsum dolores officiis, vero quasi id accusamus, quis
-                  debitis, tenetur ullam repellat suscipit. Sed corporis laborum labore facilis?</p>
-                <p><a class="btn btn-secondary" href="#">Vem ser modelo!</a></p>
+
+              <div class="card">
+                <img src="./imgs/exemploAlisamento.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Alisamento</h5>
+                  <p><a class="btn btn-secondary" href="Alisamento.html">Vem ser modelo!</a></p>
+                </div>
               </div>
-            </div>
-            <div class="card col">
-              <img src="./imgs/exemploCorteMasculino.jpeg" class="card-img-top img-fluid" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Corte Masculino</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa officia
-                  quibusdam nemo possimus suscipit ab totam deleniti voluptates nihil aliquid. Assumenda
-                  repudiandae iusto qui optio est, consequuntur eaque unde nobis.</p>
-                <p><a class="btn btn-secondary" href="#">Vem ser modelo!</a></p>
+
+              <div class="card">
+                <img src="./imgs/exemploCorteMasculino.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Corte Masculino</h5>
+                  <p><a class="btn btn-secondary" href="CorteMasculino.html">Vem ser modelo!</a></p>
+                </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div class="card-wrapper container">
             <div class="row row-cols-1 row-cols-md-2 row-cols-xxl-3 gap-0 gap-5 justify-content-center">
-            <div class="card col">
-              <img src="./imgs/exemploCorteFeminino.jpeg" class="card-img-top img-fluid" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Cabelo Feminino</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
-                  maxime non soluta animi officiis modi ut eius saepe id aliquam. Quas nobis dolorem ab
-                  nam suscipit doloremque repellat fugiat aliquid.</p>
-                <p><a class="btn btn-secondary" href="#">Vem ser modelo!</a></p>
+              <div class="card col">
+                <img src="./imgs/exemploCorteFeminino.jpeg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Cabelo Feminino</h5>
+                  <p><a class="btn btn-secondary" href="CorteFeminino.html">Vem ser modelo!</a></p>
+                </div>
               </div>
-            </div>
-            <div class="card col">
-              <img src="./imgs/exemploColoração.jpeg" class="card-img-top img-fluid" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Coloração Global</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et accusamus
-                  assumenda beatae excepturi porro perspiciatis, quo velit nam reprehenderit ad saepe
-                  rerum eius. Eveniet dolor dignissimos eligendi excepturi impedit! Eaque?</p>
-                <p><a class="btn btn-secondary" href="#">Vem ser modelo!</a></p>
+              <div class="card col">
+                <img src="./imgs/exemploColoração.jpeg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Coloração</h5>
+                  <p><a class="btn btn-secondary" href="Coloracao.html">Vem ser modelo!</a></p>
+                </div>
               </div>
-            </div>
-            <div class="card col">
-              <img src="./imgs/exemploSelagem.jpeg" class="card-img-top img-fluid" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Selagem</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et accusamus
-                  assumenda beatae excepturi porro perspiciatis, quo velit nam reprehenderit ad saepe
-                  rerum eius. Eveniet dolor dignissimos eligendi excepturi impedit! Eaque?</p>
-                <p><a class="btn btn-secondary" href="#">Vem ser modelo!</a></p>
+              <div class="card col">
+                <img src="./imgs/exemploSelagem.jpeg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tratamento</h5>
+                  <p><a class="btn btn-secondary" href="Tratamento.html">Vem ser modelo!</a></p>
+                </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
@@ -179,29 +141,12 @@
         </button>
       </div>
     </div>
-    
-    <hr class="featurette-divider">
-
-    <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
-        <div class="col-md-4 d-flex align-items-center">
-          <a href="#" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-            <img src="../imgs/logo-SENAC.png" alt="Logo Senac" width="35" height="32">
-          </a>
-          <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Senac, Inc</span>
-        </div>
-
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-2"></li><a class="text-body-secondary" href="https://www.instagram.com/senacbahia/"><i
-              class="bi bi-instagram"></i></a></li>
-          <li class="ms-2"><a class="text-body-secondary" href="https://pt-br.facebook.com/SenacBahia/"><i
-                class="bi bi-facebook"></i></a></li>
-          <li class="ms-2"><a class="text-body-secondary" href="#"><i class="bi bi-twitter"></i></a></li>
-        </ul>
-      </footer>
-    </div>
-
   </div>
+
+  <hr class="featurette-divider">
+
+  <script src="js/footer.js"></script>
+    
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 

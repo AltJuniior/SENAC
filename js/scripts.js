@@ -1,9 +1,3 @@
-/*!
- * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
- * Copyright 2011-2023 The Bootstrap Authors
- * Licensed under the Creative Commons Attribution 3.0 Unported License.
- */
-
 (() => {
   'use strict'
 
@@ -24,6 +18,16 @@
       document.documentElement.setAttribute('data-bs-theme', 'dark')
     } else {
       document.documentElement.setAttribute('data-bs-theme', theme)
+    }
+  }
+
+  const setIcon = theme => {
+    if (theme == 'light') {
+      document.getElementById('bd-theme-text').innerHTML = `<i class="bi bi-brightness-high-fill"></i>`;
+    } else if (theme == 'dark') {
+      document.getElementById('bd-theme-text').innerHTML = `<i class="bi bi-moon-fill"></i>`
+    } else {
+      document.getElementById('bd-theme-text').innerHTML = `<i class="bi bi-circle-half"></i>`;
     }
   }
 
@@ -66,6 +70,7 @@
 
   window.addEventListener('DOMContentLoaded', () => {
     showActiveTheme(getPreferredTheme())
+    setIcon(localStorage.getItem('theme'))
 
     document.querySelectorAll('[data-bs-theme-value]')
       .forEach(toggle => {
@@ -74,7 +79,8 @@
           setStoredTheme(theme)
           setTheme(theme)
           showActiveTheme(theme, true)
+          setIcon(theme)
         })
       })
   })
-})()
+})();

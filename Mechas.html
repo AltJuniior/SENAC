@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="">
+
+<head>
+  <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="icon" href="imgs/icon.png">
+    <title>Formulário Mechas</title>
+    <script src="js/scripts.js"></script>
+    <script src="js/alisamentoForm.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <script src="js/navbar.js"></script>
+
+  <h2 class="text-center p-4">Formulário Mechas</h2>
+
+  <div class="container-lg">
+    <form class="container-xxl" action="php/processa_formulario_mecha.php" method="post">
+      <div class="mb-3">
+        <label for="name" class="form-label">Nome</label>
+        <input type="name" class="form-control" name="name" id="name" placeholder="Digite seu nome completo" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="Email" class="form-label">Email</label>
+        <input type="email" class="form-control" name="email" id="Email" placeholder="Digite seu Email" required>
+        <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="whatsapp" class="form-label">Número do WhatsApp</label>
+        <input type="tel" pattern="^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$" class="form-control" name="whatsapp" id="whatsapp" placeholder="Digite seu número do WhatsApp" required>
+      </div>
+
+      <div class="row">
+        <div class="mb-3 col">
+          <label for="Age" class="form-label">Idade</label>
+          <select name="age" class="form-select" aria-label="Default select example" required>
+            <option selected disabled value="">Selecione</option>
+            <option value="18 ~ 29">18 ~ 29</option>
+            <option value="30 ~ 49">30 ~ 49</option>
+            <option value="50 +">50 +</option>
+        </select>
+        </div>
+
+        <div class="mb-3 col">
+          <label for="pregnant" class="form-label">Gestante ou Amamentando</label>
+          <select class="form-select" name="pregnant" id="pregnant" required>
+            <option selected disabled value="">Selecione</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="mb-3 col">
+          <label for="chemistry" class="form-label">Utiliza química</label>
+          <select class="form-select" name="chemistry" aria-label="Default select example" id="chemistry" required>
+            <option selected disabled value="">Selecione</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+          </select>
+        </div>
+
+        <div class="mb-3 col">
+          <label for="allergy" class="form-label">Já apresentou algum tipo de alergia</label>
+          <select class="form-select" name="allergytype" aria-label="Default select example" id="allergySelect" required>
+            <option selected disabled value="">Selecione</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+          </select>
+        </div>
+      </div>
+
+        <div class="mb-3">
+          <label for="colorful" class="form-label">Cabelo colorido</label>
+          <select class="form-select" name="coloredhair" aria-label="Default select example" id="colorfulSelect" required>
+            <option selected disabled value="">Selecione</option>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="" class="form-label">Deseja realizar</label>
+          <select class="form-select" name="mechapretendida" aria-label="Default select example" id="mechapretendida" required>
+            <option selected disabled value="">Selecione</option>
+            <option value="Loiro">Loiro</option>
+            <option value="Morena Iluminada">Morena Iluminada</option>
+          </select>
+        </div>
+
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+  <hr class="featurette-divider" />
+
+  <script src="js/footer.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+
+</html>
