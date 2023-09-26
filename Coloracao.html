@@ -3,17 +3,18 @@
 
 <head>
   <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/form.css">
-    <link rel="icon" href="imgs/icon.png">
-    <title>Formulário Coloração</title>
-    <script src="js/scripts.js"></script>
-    <script src="js/alisamentoForm.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="icon" href="imgs/icon.png">
+  <title>Formulário Coloração</title>
+  <script src="js/scripts.js"></script>
+  <script src="js/alisamentoForm.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -25,19 +26,22 @@
     <form class="container-xxl" method="post" action="php/processa_formulario_coloracao.php">
       <div class="mb-3">
         <label for="name" class="form-label">Nome</label>
-        <input type="name" class="form-control" name="name" id="name" placeholder="Digite seu nome completo" required>
+        <input type="name" class="form-control" name="name" id="name" maxlength="50"
+          placeholder="Digite seu nome completo" required>
       </div>
 
       <div class="mb-3">
         <label for="Email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu Email" required>
+        <input type="email" class="form-control" name="email" id="email" maxlength="40" placeholder="Digite seu Email"
+          required>
         <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém.</div>
       </div>
 
       <div class="mb-3">
         <label for="whatsapp" class="form-label">Número do WhatsApp</label>
-        <input type="tel" pattern="^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$" class="form-control"
-          id="whatsapp" name="whatsapp" placeholder="Digite seu número do WhatsApp" required>
+        <input type="tel" name="whatsapp" minlength="9" maxlength="13"
+          pattern="^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$" class="form-control" id="whatsapp"
+          placeholder="Digite seu número do WhatsApp" required>
       </div>
 
       <div class="row">
@@ -120,7 +124,9 @@
 
   <script src="js/footer.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 
 </body>
 

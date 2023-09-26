@@ -25,19 +25,18 @@
         <form class="container-xxl" action="php/processa_formulario_corte_masculino.php" method="post">
             <div class="mb-3">
                 <label for="name" class="form-label">Nome</label>
-                <input type="name" class="form-control" name="name" id="name" placeholder="Digite seu nome completo" required>
+                <input type="name" class="form-control" name="name" id="name" maxlength="50" placeholder="Digite seu nome completo" required>
             </div>
 
             <div class="mb-3">
                 <label for="Email" class="form-label">Email</label>
-                <input type="email" class="form-control" name="email" id="email" placeholder="Digite seu Email" required>
+                <input type="email" class="form-control" name="email" id="email" maxlength="40" placeholder="Digite seu Email" required>
                 <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém.</div>
             </div>
 
             <div class="mb-3">
                 <label for="whatsapp" class="form-label">Número do WhatsApp</label>
-                <input type="tel" pattern="^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$" class="form-control"
-                    id="whatsapp" name="whatsapp" placeholder="Digite seu número do WhatsApp" required>
+                <input type="tel" name="whatsapp" minlength="9" maxlength="13" pattern="^\(?[1-9]{2}\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$" class="form-control" id="whatsapp" placeholder="Digite seu número do WhatsApp" required>
             </div>
 
             <div class="row">
